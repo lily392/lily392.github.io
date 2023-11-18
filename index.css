@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Domine', sans-serif;
+}
+#banner{
+    background-image:linear-gradient(rgba(218, 206, 206, 0.7),rgba(0,0,0,0.7));
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.banner-text{
+    text-align: center;
+    color: #fff;
+    padding-top: 180px;
+}
+.banner-text h1{
+    font-size: 100px;
+    font-family: 'Kaushan Script', cursive;
+}
+.banner-text p{
+    padding-top: 20px;
+    font-size: 20px;
+    font-style: italic;
+}
+.banner-btn{
+    margin: 0px auto 0;
+}
+.banner-btn a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 20 10px;
+    padding: 12px 0;
+    color: #fff;
+    border: .5px solid #fff;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+.banner-btn a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: -1;
+    transition:0.5s;
+}
+.banner-btn a:hover span{
+    width: 100%;
+
+}
+.banner-btn a:hover{
+    color: #000;
+}
+body{
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.absolute{
+    position: absolute;
+    top: 50px !important;
+    inset: 0;
+    justify-content: center;
+    display: inline-flex;
+    flex-direction: row;
+}
+.justify-center{
+    justify-content: center;
+}
+.bg-shape1{
+    width: 400px;
+    height: 400px;
+    border-radius: 9999px;
+    position: relative;
+    animation: one 10s infinite;
+}
+
+.bg-shape2{
+    width: 300px;
+    height: 300px;
+    border-radius: 9999px;
+    position: two 10s infinite;
+}
+@keyframes one{
+    0%{left: 0px; top: 0px;}
+    25%{left: -100px; top: 70px;}
+    50%{left: 20px; top: 150px;}
+    75%{left: 50px; top: 100px;}
+    100%{left: 0px; top: 0px;}
+}
+@keyframes two{
+    0%{left: 0px; top: 0px;}
+    25%{left: 70px; top: 10px;}
+    50%{left: 100px; top: 100px;}
+    75%{left: 50px; top: -100px;}
+    100%{left: 0px; top: 0px;}
+}
+.opacity-50{
+    opacity: .5;
+}
+.bg-blur{
+    filter: blur(90px);
+}
+.bg-primary{
+    background-color: rgb(30,0,255);
+}
+.bg-teal{
+    background-color: rgb(255,72,173);
+}
+.bg-purple{
+    background-color: rgb(140, 0, 215);
+}
